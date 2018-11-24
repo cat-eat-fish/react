@@ -46,6 +46,10 @@ class MyArticle extends Component {
       }
     )
   }
+
+  isShow(){
+      console.log(this)
+  }
   
   render() {
     return (
@@ -76,6 +80,7 @@ class MyArticle extends Component {
             {/* 上一篇下一篇 */}
             <div className="post-navigation">
                 <div className="post-previous">
+                {}
                     <Link to={`/article/${this.state.thisInfo.previousInfo.id}`}  replace target="_blank" >
                         <span>上一篇：</span> {this.state.thisInfo.previousInfo.title}
                     </Link>

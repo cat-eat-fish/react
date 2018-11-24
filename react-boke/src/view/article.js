@@ -3,6 +3,7 @@ import MyHead from '../component/myhead';
 import MyFoot from '../component/myfoot';
 import Contact from '../component/contact';
 import MyArticle from '../component/article';
+import Refresh from '../component/other/refresh';
 
 class Article extends Component {
   render() {
@@ -18,6 +19,7 @@ class Article extends Component {
                 </div>
             </div>
             <MyFoot/>
+            <Refresh/>
         </div>
     );}
 }

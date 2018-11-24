@@ -89,7 +89,8 @@ class MyHead extends Component {
               {/* 搜索功能 */}
               <div className="search">
                 <input id="searchInp" type="text"  placeholder="Search..." />
-                <input type="button"  onClick={this.search.bind(this)} value="搜索" />
+                <i className="iconfont icon-sousuo" onClick={this.search.bind(this)}></i>
+                {/* <input type="button"   value="搜索" /> */}
               </div>
             </div>
           </div>

@@ -4,6 +4,7 @@ import MyFoot from '../component/myfoot';
 import Contact from '../component/contact';
 import ArticleList from '../component/articleList';
 import ThisClass from '../component/thisclass';
+import Refresh from '../component/other/refresh';
 
 class MyHome extends Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class MyHome extends Component {
                 </div>
             </div>
             <MyFoot />
+            <Refresh/>
         </div>
     );}
 }

@@ -22,7 +22,7 @@ class MyFoot extends Component {
                         {
                             this.state.link.map((val,index)=>{
                                 return <li key={index}>
-                                    <a href={val.href}  title={val.text}>{val.text}</a>
+                                    <a target="_blank" href={val.href}  title={val.text}>{val.text}</a>
                                 </li>
                             })
                         }				

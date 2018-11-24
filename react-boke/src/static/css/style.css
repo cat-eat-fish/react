@@ -30,6 +30,7 @@ header .nav .search{margin-top: 4px;position: relative;}
 header .nav .search input[type=text]{border: none; display: block;background: #fff; width: 130px;text-indent: 2em; border-radius: 25px;font-size: 14px;transition: width .3s linear;background: #fff;height: 42px;outline: 0;}
 header .nav .search input[type=text]:focus{width: 180px;}
 header .nav .search input[type=button]{display: block;outline: none;background: none;border: none;position: absolute;right: 5px;top: 13px;cursor: pointer;}
+header .nav .search i{display: block;outline: none;background: none;border: none;position: absolute;right: 12px;top: -5px;cursor: pointer;}
 header .nav .search{display: flex;justify-content: space-between}
 /* 警告 */
 .caveat{width: 1160px;margin: 0 auto;font-size: 14px;padding: 15px 0;}
@@ -68,6 +69,7 @@ header .nav .search{display: flex;justify-content: space-between}
 .contact a.social_weixin {background: #01C271;}
 .contact a.social_weixin .weixin {display: none; position: absolute;top: 120px;left: 145px;width: 200px;height: 200px;padding: 5px;background: #01C271;z-index: 999;}
 .contact a.social_weixin .weixin img{ width: 190px;}
+.contact a i{font-size: 34px}
 .contact .social_weixin:hover .weixin {display: block;}
 
 /* 正文 */

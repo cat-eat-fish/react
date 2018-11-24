@@ -3,6 +3,7 @@ import MyHead from '../component/myhead';
 import MyFoot from '../component/myfoot';
 import Contact from '../component/contact';
 import SearchList from '../component/searchList';
+import Refresh from '../component/other/refresh';
 
 class MyHome extends Component {
     constructor(props) {
@@ -24,6 +25,7 @@ class MyHome extends Component {
                 </div>
             </div>
             <MyFoot/>
+            <Refresh/>
         </div>
     );}
 }

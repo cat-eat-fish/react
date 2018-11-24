@@ -15,11 +15,11 @@ class Contact extends Component {
         <div className="contact">
             <p className="title"><span>联系方式</span></p>
             <ul>
-                <a href={this.state.weibo} target="_blank" className="social_a social_weibo" rel="nofollow" title="新浪微博"><i className="fa fa-weibo">微博</i></a> 
-                <a href={this.state.qq} target="_blank" className="social_a social_qq" rel="nofollow" title=""><i className="fa fa-qq">QQ</i></a>      
-                <a className="social_a social_weixin" ><i className="fa fa-wechat">微信</i>
+                <a href={this.state.weibo} target="_blank" className="social_a social_weibo" rel="nofollow" title="新浪微博"><i className="iconfont icon-weibo"></i></a> 
+                <a href={this.state.qq} target="_blank" className="social_a social_qq" rel="nofollow" title=""><i className="iconfont icon-qq"></i></a>      
+                <a className="social_a social_weixin" ><i className="iconfont icon-icon"></i>
                 <span className="weixin">
-                    <img className="mip-fill-content mip-replaced-content" src="" alt="扫描微信" />
+                    <img className="mip-fill-content mip-replaced-content" src={require('../static/img/weixin.jpg')} alt="扫描微信" />
                 </span>
                 </a>	
 	        </ul>

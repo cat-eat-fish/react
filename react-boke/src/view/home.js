@@ -5,6 +5,8 @@ import Caveat from '../component/caveat';
 import Slider from '../component/slider';
 import Contact from '../component/contact';
 import ArticleList from '../component/articleList';
+import Refresh from '../component/other/refresh';
+
 
 class MyHome extends Component {
   render() {
@@ -22,6 +24,7 @@ class MyHome extends Component {
                 </div>
             </div>
             <MyFoot/>
+            <Refresh/>
         </div>
     );}
 }
