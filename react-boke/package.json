@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "pagehome":".",
   "private": true,
-  "homepage":"https://cat-eat-fish.github.io/react/react-boke/ceshi/",
+  "homepage":"./",
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
