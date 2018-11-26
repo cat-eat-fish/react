@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react-boke/precache-manifest.107b4d1c25f1f6654e05a4530635b423.js"
+  "/react/react-boke/ceshi/precache-manifest.f3679dc5841133cd7dadfbd33f06d500.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/react-boke/index.html", {
+workbox.routing.registerNavigationRoute("/react/react-boke/ceshi/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
