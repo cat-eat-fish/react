@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/react/react-boke/ceshi/static/js/runtime~main.075c6f5c.js"
   },
   {
-    "revision": "fb8252f045a8a473881b",
-    "url": "/react/react-boke/ceshi/static/js/main.fb8252f0.chunk.js"
+    "revision": "5315c4fb8aca8de5992b",
+    "url": "/react/react-boke/ceshi/static/js/main.5315c4fb.chunk.js"
   },
   {
-    "revision": "057a02504c07b80ad678",
-    "url": "/react/react-boke/ceshi/static/js/1.057a0250.chunk.js"
+    "revision": "3685ba4c8452e3851d27",
+    "url": "/react/react-boke/ceshi/static/js/1.3685ba4c.chunk.js"
   },
   {
-    "revision": "fb8252f045a8a473881b",
+    "revision": "5315c4fb8aca8de5992b",
     "url": "/react/react-boke/ceshi/static/css/main.c6c728ad.chunk.css"
   },
   {
-    "revision": "a22e10249472ef5e831b607dfc1a9480",
+    "revision": "cb972e2f7738ba95d08fc6c029f38e79",
     "url": "/react/react-boke/ceshi/index.html"
   }
 ];

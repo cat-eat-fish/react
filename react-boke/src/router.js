@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter,HashRouter, Route, Switch} from 'react-router-dom';
 
 import Home from './view/home';
 import Detail from './view/detail';
@@ -9,7 +9,8 @@ import Article from './view/article';
 
 
 const BasicRoute = () => (
-    <BrowserRouter >
+    <HashRouter>
+    {/* <BrowserRouter > */}
         <Switch>
             {/* 首页 */}
             <Route exact path="/" component={Home}/>
@@ -22,7 +23,8 @@ const BasicRoute = () => (
             {/* 正文页面 */}
             <Route exact path="/article/:id" component={Article}/>
         </Switch>
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
+    </HashRouter>
 );
 
 export default BasicRoute;

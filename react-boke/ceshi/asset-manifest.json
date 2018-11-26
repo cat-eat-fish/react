@@ -1,9 +1,9 @@
 {
   "main.css": "/react/react-boke/ceshi/static/css/main.c6c728ad.chunk.css",
-  "main.js": "/react/react-boke/ceshi/static/js/main.fb8252f0.chunk.js",
-  "main.js.map": "/react/react-boke/ceshi/static/js/main.fb8252f0.chunk.js.map",
-  "static/js/1.057a0250.chunk.js": "/react/react-boke/ceshi/static/js/1.057a0250.chunk.js",
-  "static/js/1.057a0250.chunk.js.map": "/react/react-boke/ceshi/static/js/1.057a0250.chunk.js.map",
+  "main.js": "/react/react-boke/ceshi/static/js/main.5315c4fb.chunk.js",
+  "main.js.map": "/react/react-boke/ceshi/static/js/main.5315c4fb.chunk.js.map",
+  "static/js/1.3685ba4c.chunk.js": "/react/react-boke/ceshi/static/js/1.3685ba4c.chunk.js",
+  "static/js/1.3685ba4c.chunk.js.map": "/react/react-boke/ceshi/static/js/1.3685ba4c.chunk.js.map",
   "runtime~main.js": "/react/react-boke/ceshi/static/js/runtime~main.075c6f5c.js",
   "runtime~main.js.map": "/react/react-boke/ceshi/static/js/runtime~main.075c6f5c.js.map",
   "static/media/logo.jpg": "/react/react-boke/ceshi/static/media/logo.85aed8f2.jpg",
@@ -12,6 +12,6 @@
   "static/media/weixin.jpg": "/react/react-boke/ceshi/static/media/weixin.1808121f.jpg",
   "static/css/main.c6c728ad.chunk.css.map": "/react/react-boke/ceshi/static/css/main.c6c728ad.chunk.css.map",
   "index.html": "/react/react-boke/ceshi/index.html",
-  "precache-manifest.f3679dc5841133cd7dadfbd33f06d500.js": "/react/react-boke/ceshi/precache-manifest.f3679dc5841133cd7dadfbd33f06d500.js",
+  "precache-manifest.9160444c210e741e9c481b30b0ce9eb9.js": "/react/react-boke/ceshi/precache-manifest.9160444c210e741e9c481b30b0ce9eb9.js",
   "service-worker.js": "/react/react-boke/ceshi/service-worker.js"
 }

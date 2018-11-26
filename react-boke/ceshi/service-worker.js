@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react/react-boke/ceshi/precache-manifest.f3679dc5841133cd7dadfbd33f06d500.js"
+  "/react/react-boke/ceshi/precache-manifest.9160444c210e741e9c481b30b0ce9eb9.js"
 );
 
 workbox.clientsClaim();
