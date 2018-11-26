@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link,withRouter} from "react-router-dom";
 import logo from '../static/img/logo.jpg';
+import Counter from "./other/Counter.js"
 
 class MyHead extends Component {
   constructor(props) {
@@ -12,8 +13,14 @@ class MyHead extends Component {
       otherInfo: {
         articlesNum:0,
         browseNum: 0,
-      }
+      },
+      value:42,
     };
+  }
+  handleChange(event) {
+    this.setState({
+      value: event.target.value
+    });
   }
   search(){
     var searchKey = document.querySelector('#searchInp').value;
@@ -25,7 +32,8 @@ class MyHead extends Component {
       console.log('关键词不能是空格')
       return false;
     }else{
-      this.props.history.push({ pathname : `/search/${searchKey}`})
+      // console.log(searchKey)
+      this.props.history.push({ pathname : `/search`,search:`?search=${searchKey}`})
       // this.props.router.push({ path : '/search' ,query : { search: searchKey} })
     }
   }
@@ -68,11 +76,11 @@ class MyHead extends Component {
                 <div className="blog-data">
                   <span className="blog-num">
                     文章
-                    <b>{this.state.otherInfo.articlesNum}</b>
+                    <b><Counter value={parseInt(this.state.otherInfo.articlesNum, 10) || 0} /></b>
                   </span>
                   <span className="blog-view">
                     浏览
-                    <b>{this.state.otherInfo.browseNum}</b>
+                    <b><Counter value={parseInt(this.state.otherInfo.browseNum, 10) || 0} />{}</b>
                   </span>
                 </div>
               </div>
@@ -92,6 +100,7 @@ class MyHead extends Component {
                 <i className="iconfont icon-sousuo" onClick={this.search.bind(this)}></i>
                 {/* <input type="button"   value="搜索" /> */}
               </div>
+              
             </div>
           </div>
         </header>

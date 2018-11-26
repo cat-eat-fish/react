@@ -18,7 +18,7 @@ const BasicRoute = () => (
             {/* 分类页面 */}
             <Route exact path="/myclass/:name" component={MyClass}/>
             {/* 搜索页面 */}
-            <Route exact path="/search/:search" component={Search}/>
+            <Route exact path="/search" component={Search}/>
             {/* 正文页面 */}
             <Route exact path="/article/:id" component={Article}/>
         </Switch>

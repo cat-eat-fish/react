@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  Link,withRouter,} from "react-router-dom";
+import {  Link,withRouter} from "react-router-dom";
 import Pagecomponent from './other/Pagecomponent'
 class SearchList extends Component {
   constructor(props) {
@@ -16,11 +16,18 @@ class SearchList extends Component {
     this.getCurrentPage = this.getCurrentPage.bind(this)
   }
   componentWillMount(){
+
   }
     getCurrentPage(currentPage) {
         this.setState({
             dataList : currentPage === 1 ? this.state.ArticleList.slice(0,10) : this.state.ArticleList.slice((currentPage - 1) * 10,currentPage * 10)
         })
+    }
+
+    getQueryString(name) { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+        var r = window.location.search.substr(1).match(reg); 
+        if (r != null) return decodeURI(r[2]); return null; 
     }
   // 组件渲染完成
   componentDidMount () {
@@ -43,7 +50,7 @@ class SearchList extends Component {
         <div className="searchList">
             <div className="archive-search">
                 {/* <h1 >搜索 " {decodeURI(this.props.history.location.search.split('&')[0].substr(3))} "</h1> */}
-                <h1 >搜索 " {this.props.match.params.search} "</h1>
+                <h1 >搜索 " {this.getQueryString("search")} "</h1>
 		    </div>
             <div className="post-search">
                 {this.state.dataList.map((val,index)=>{

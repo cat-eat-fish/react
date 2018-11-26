@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {  Link} from "react-router-dom";
+import {  Link,withRouter} from "react-router-dom";
+import Counter from "./other/Counter.js"
 
 class MyArticle extends Component {
   constructor(props) {
@@ -20,7 +21,6 @@ class MyArticle extends Component {
         ]
     }
   }
-
   // 组件渲染完成
   componentDidMount () {
     // 获取数据
@@ -47,9 +47,22 @@ class MyArticle extends Component {
     )
   }
 
-  isShow(){
-      console.log(this)
-  }
+isHas(now){
+    if(now == 1){
+      return (
+        <a  >
+            <span>上一篇：</span> 没有更多了！
+        </a>
+      )
+    }else {
+      
+      return (
+        <Link to={`/article/${this.state.thisInfo.previousInfo.id}`}  replace target="_blank" >
+            <span>上一篇：</span> {this.state.thisInfo.previousInfo.title}
+        </Link>
+      )
+    }
+}
   
   render() {
     return (
@@ -66,7 +79,7 @@ class MyArticle extends Component {
                                 {this.state.thisInfo.thisclass}
                             </Link>
                         </span>
-                        <span><i className="fa fa-eye fa-fw"></i>{this.state.thisInfo.look} views</span>
+                        <span><i className="fa fa-eye fa-fw"></i><Counter value={parseInt(this.state.thisInfo.look, 10) || 0} /> views</span>
                     </div>
                 </header>
                 <div className="article-content">
@@ -80,10 +93,7 @@ class MyArticle extends Component {
             {/* 上一篇下一篇 */}
             <div className="post-navigation">
                 <div className="post-previous">
-                {}
-                    <Link to={`/article/${this.state.thisInfo.previousInfo.id}`}  replace target="_blank" >
-                        <span>上一篇：</span> {this.state.thisInfo.previousInfo.title}
-                    </Link>
+                    {this.isHas(this.props.match.params.id)}
                 </div>        
                 <div className="post-next">
                     <Link to={`/article/${this.state.thisInfo.nextInfo.id}`}  replace target="_blank" >
@@ -109,4 +119,4 @@ class MyArticle extends Component {
     );
   }
 }
-export default MyArticle;
+export default withRouter(MyArticle);

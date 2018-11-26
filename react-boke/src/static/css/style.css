@@ -46,7 +46,7 @@ header .nav .search{display: flex;justify-content: space-between}
 .ArticleList .post{width: 790px; margin-bottom: 20px;padding: 20px;overflow: hidden;background-color: #fff;border: 1px solid #eee;border-radius: 2px;-webkit-transition: all .4s ease;transition: all .4s ease;position: relative;}
 .ArticleList .post:hover {box-shadow: 0 0 8px rgba(46,143,237,.3);}
 .ArticleList .post a{color: #666;}
-.ArticleList .loading {background: #EEE url(../img/lay.gif) center center no-repeat;min-height: 130px;}
+/* .ArticleList .loading {background: #EEE url(../img/lay.gif) center center no-repeat;min-height: 130px;} */
 .ArticleList .post header {position: relative;}
 .ArticleList .post header h2 {padding-bottom: 10px;font-size: 18px;line-height: 24px;}
 .ArticleList .post-text {font-size: 14px;line-height: 24px;display: block;}
