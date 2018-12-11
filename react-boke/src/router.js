@@ -8,6 +8,11 @@ import Search from './view/search';
 import Article from './view/article';
 import AboutMe from './view/aboutme';
 import MyEvanyou from './view/myEvanyou';
+import MyAutoScroll from './view/myautoscroll';
+import MyExpression from './view/myexpression';
+import MyQrcode from './view/myqrcode';
+
+
 import No404 from './view/no404';
 
 const BasicRoute = () => (
@@ -29,8 +34,12 @@ const BasicRoute = () => (
 
             {/* ts_彩带 */}
             <Route exact path="/evanyou" component={MyEvanyou}/>
-            
-
+            {/* 文字滚动 */}
+            <Route exact path="/autoscroll" component={MyAutoScroll}/>
+            {/* 文字滚动 */}
+            <Route exact path="/expression" component={MyExpression}/>
+            {/* JS二维码 */}
+            <Route exact path="/qrcode" component={MyQrcode}/>
 
 
 

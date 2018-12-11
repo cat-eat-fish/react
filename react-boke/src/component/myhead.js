@@ -7,7 +7,7 @@ class MyHead extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      nav:[{id:0,text:'首页',stext:'home'},{id:1,text:'HTML',stext:'html'},{id:2,text:'CSS',stext:'css'},{id:3,text:'JAVASCRPIT',stext:"javascript"},{id:4,text:'VUE',stext:"vue"},{id:5,text:'react',stext:'react'}],
+      nav:[{id:0,text:'首页',stext:'home'},{id:1,text:'HTML',stext:'html'},{id:2,text:'CSS',stext:'css'},{id:3,text:'JAVASCRIPT',stext:"javascript"},{id:4,text:'VUE',stext:"vue"},{id:5,text:'react',stext:'react'}],
       searchKey:'',
       personalInfo:{name: "", photo: "",des:''},
       otherInfo: {
@@ -93,6 +93,7 @@ class MyHead extends Component {
                 {this.state.nav.slice(1).map((val,index)=>{
                   return  <Link  to={`/myclass/${val.stext}`}  replace key={index}>{val.text}</Link>
                 })}
+                <Link replace to={'/aboutme'}  >关于我</Link>
               </nav>
               {/* 搜索功能 */}
               <div className="search">
