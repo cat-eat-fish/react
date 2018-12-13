@@ -117,6 +117,7 @@ class AboutMe extends Component {
         var pattcard = /^((\d{18})|([0-9x]{18})|([0-9X]{18}))$/;    //身份证号验证
         var pattuser = /^[a-zA-Z][a-zA-Z0-9_]{4,15}$/; //(字母开头，允许5-16字节，允许字母数字下划线)
         var pattmoney = /^([+-]?)((\d{1,3}(,\d{3})*)|(\d+))(\.\d{2})?$/; //货币验证
+        var pattmoney2 = /^\d+(\.\d+)?$/;
         `
       },{
         url:"",
