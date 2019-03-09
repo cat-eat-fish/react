@@ -6,10 +6,17 @@ import Slider from '../component/slider';
 import Contact from '../component/contact';
 import ArticleList from '../component/articleList';
 import Refresh from '../component/other/refresh';
-
+import {textGet} from "../api/data.js"
+import axios  from "axios"
 
 class MyHome extends Component {
   render() {
+    // textGet().then(res=>{
+    //     console.log(res)
+    // }).catch(err=>{console.log(err)});
+    // axios.get('http://localhost:3000/reactApi/get').then(res=>{
+    //     console.log(res)
+    // }).catch(err=>{console.log(err)})
     return (
         <div className="home">
             <MyHead/>

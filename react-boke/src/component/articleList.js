@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link} from "react-router-dom";
 import Pagecomponent from './other/Pagecomponent'
 import Counter from "./other/Counter.js"
+
 class ArticleList extends Component {
   constructor(props) {
     super(props);
@@ -20,10 +21,6 @@ class ArticleList extends Component {
             dataList : currentPage === 1 ? this.state.ArticleList.slice(0,10) : this.state.ArticleList.slice((currentPage - 1) * 10,currentPage * 10)
         })
     }
-
-
-
-    
     loadImg(arr){
         for( var i = 0,len = arr.length; i < len; i++){
             if(arr[i].getBoundingClientRect().top < document.documentElement.clientHeight && !arr[i].isLoad){
